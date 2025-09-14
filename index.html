@@ -61,22 +61,31 @@
 
     .social-media {
     text-align: center;
-    margin: 30px 0;
+    margin: 20px 0;          /* jarak atas-bawah lebih kecil */
     display: flex;
     justify-content: center;
     gap: 20px;
+    align-items: center;      /* vertical center */
+}
+
+.social-media p {
+    margin: 0 10px 0 0;       /* hapus margin atas/bawah, beri jarak kanan */
+    font-size: 14px;           /* lebih kecil, supaya ringkas */
+    display: flex;
+    align-items: center;       /* biar teks sejajar dengan ikon */
 }
 
 .social-media img {
-    width: 40px;        /* ukuran lebar */
-    height: 40px;       /* ukuran tinggi sama */
-    transition: 0.3s;   /* efek hover */
-    border-radius: 0;   /* hilangkan bulatan */
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    border-radius: 0;
 }
 
 .social-media img:hover {
-    transform: scale(1.2); /* zoom saat hover */
+    transform: scale(1.2);
 }
+
 
     
   </style>
@@ -123,6 +132,7 @@
 
 </body>
 </html>
+
 
 
 
