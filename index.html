@@ -94,6 +94,23 @@
     
   </style>
 </head>
+
+<script>
+  window.addEventListener('load', () => {
+    // Tandai index.html sebagai halaman "root" internal
+    history.replaceState({ page: "index" }, "", location.href);
+
+    // Jika tombol back ditekan
+    window.addEventListener('popstate', (e) => {
+      if (!e.state || e.state.page === "index") {
+        // Kembali ke halaman asal user sebelum masuk website
+        history.go(-1); 
+      }
+    });
+  });
+</script>
+
+  
 <body>
 
  <!-- Navbar -->
@@ -137,6 +154,7 @@
 
 </body>
 </html>
+
 
 
 
